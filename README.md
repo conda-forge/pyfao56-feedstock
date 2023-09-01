@@ -1,11 +1,11 @@
-About pyfao56
-=============
+About pyfao56-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyfao56-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/kthorp/pyfao56
 
 Package license: Unlicense
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyfao56-feedstock/blob/main/LICENSE.txt)
 
 Summary: FAO-56 in Python
 
