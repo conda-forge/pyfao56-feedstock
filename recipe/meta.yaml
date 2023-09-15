@@ -37,7 +37,7 @@ test:
 
 about:
   home: http://github.com/kthorp/pyfao56
-  summary: FAO-56 in Python
+  summary: FAO-56 Evapotranspiration in Python
   dev_url: http://github.com/kthorp/pyfao56
   license: Unlicense
   license_file: LICENSE.md
