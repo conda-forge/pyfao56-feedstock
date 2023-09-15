@@ -7,7 +7,7 @@ Home: http://github.com/kthorp/pyfao56
 
 Package license: Unlicense
 
-Summary: FAO-56 in Python
+Summary: FAO-56 Evapotranspiration in Python
 
 Development: http://github.com/kthorp/pyfao56
 
