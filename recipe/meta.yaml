@@ -7,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyfao56-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyfao56-{{ version }}.tar.gz
   sha256: 2a536cd75e102bb0d4c655392a30fba91b7cac1c6372c2af2a5b3beb539cff0e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - matplotlib
     - numpy
     - pandas
-    - python >=3.7
+    - python >={{ python_min }}
     - requests
     - urllib3
 
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://github.com/kthorp/pyfao56
