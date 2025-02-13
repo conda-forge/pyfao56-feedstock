@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyfao56-{{ version }}.tar.gz
-  sha256: 2a536cd75e102bb0d4c655392a30fba91b7cac1c6372c2af2a5b3beb539cff0e
+  sha256: bbca2fad14f3863378a3e9989ac5c1684e026b187cf259cd693a63d7fdc5a5a2
 
 build:
   number: 1
@@ -18,9 +18,10 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - python >={{ python_min }}
@@ -38,7 +39,7 @@ test:
 
 about:
   home: http://github.com/kthorp/pyfao56
-  summary: FAO-56 in Python
+  summary: FAO-56 Evapotranspiration in Python
   dev_url: http://github.com/kthorp/pyfao56
   license: Unlicense
   license_file: LICENSE.md
