@@ -18,9 +18,10 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - python >={{ python_min }}
