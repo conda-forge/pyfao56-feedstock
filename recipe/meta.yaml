@@ -1,5 +1,5 @@
 {% set name = "pyfao56" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyfao56-{{ version }}.tar.gz
-  sha256: bbca2fad14f3863378a3e9989ac5c1684e026b187cf259cd693a63d7fdc5a5a2
+  sha256: ea77aa80059726b6cc818af8eaa21afe544bd3c2bc3740a42d58f1ddfcbd6f03
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
